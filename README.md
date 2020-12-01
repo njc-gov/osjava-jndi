@@ -10,12 +10,12 @@ Simple-JNDI's JNDI implementation is entirely memory based. No server instance i
 
 <pre>
 &lt;dependency>
-    &lt;groupId>com.github.h-thurow&lt;/groupId>
+    &lt;groupId>gov.njc.ito.jcf&lt;/groupId>
     &lt;artifactId>simple-jndi&lt;/artifactId>
     &lt;version>0.23.0&lt;/version>
 &lt;/dependency>
 </pre>
-or <a href=http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22com.github.h-thurow%22%20AND%20a%3A%22simple-jndi%22>download from here</a>.
+or <a href=http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22gov.njc.ito.jcf%22%20AND%20a%3A%22simple-jndi%22>download from here</a>.
 <h3>Installing Simple-JNDI</h3>
 
 After download, installing Simple-JNDI is as simple as adding the simple-jndi jar to your classpath. Some of the features 
