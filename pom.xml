@@ -3,7 +3,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>gov.njc.ito.jcf</groupId>
+	<groupId>org.java-tools.utils</groupId>
 	<artifactId>simple-jndi</artifactId>
 	<version>0.23.0</version>
 	<name>${project.groupId}:${project.artifactId}</name>
@@ -13,11 +13,11 @@
         files serves as a model for the contexts structure. The contexts get populated
         with Objects defined by .properties files, XML files or Windows-style .ini files.
     </description>
-	<url>https://github.com/h-thurow/Simple-JNDI</url>
+	<url>https://github.com/java-tools/jt-simple-jndi</url>
 	<licenses>
 		<license>
 			<url>
-                https://raw.githubusercontent.com/h-thurow/Simple-JNDI/master/LICENSE.txt
+                https://raw.githubusercontent.com/java-tools/jt-simple-jndi/main/LICENSE.txt
             </url>
 		</license>
 	</licenses>
@@ -25,9 +25,18 @@
 		<connection>scm:git:git//github.com/h-thurow/Simple-JNDI.git</connection>
 		<developerConnection>scm:git:ssh//github.com/h-thurow/Simple-JNDI.git
         </developerConnection>
-		<url>https://github.com/h-thurow/Simple-JNDI</url>
+		<url>https://github.com/java-tools/jt-simple-jndi</url>
 	</scm>
 	<developers>
+		<developer>
+			<name>Bala Raman</name>
+			<id>bala</id>
+			<email>bala@srala.com</email>
+			<organization>java-tools.org</organization>
+			<roles>
+				<role>Java Developer</role>
+			</roles>
+		</developer>
 		<developer>
 			<name>Henri Yandell</name>
 			<id>hen</id>
@@ -122,6 +131,19 @@
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
 			<version>1.7.21</version>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>2.2</version>
+			<optional>true</optional>
 		</dependency>
 		<dependency>
 			<groupId>commons-io</groupId>
