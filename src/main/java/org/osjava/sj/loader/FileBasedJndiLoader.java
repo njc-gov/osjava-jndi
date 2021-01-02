@@ -50,7 +50,7 @@ public class FileBasedJndiLoader extends JndiLoader {
      *
      */
     public void load(File fileOrDirectory, Context ctxt, boolean preserveFileNameAsContextName) throws NamingException, IOException {
-        // See https://github.com/h-thurow/Simple-JNDI/issues/7
+        // See https://github.com/njc-gov/osjava-jndi/issues/7
         fileOrDirectory = new File(fileOrDirectory.getAbsolutePath());
         if (fileOrDirectory.isDirectory()) {
             loadDirectory(fileOrDirectory, ctxt, null, "");

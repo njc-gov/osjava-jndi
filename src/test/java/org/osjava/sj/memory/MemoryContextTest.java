@@ -90,7 +90,7 @@ public class MemoryContextTest {
     }
 
     /**
-     * <p>Workaround for <a href="https://stackoverflow.com/questions/51911367/error-when-trying-to-use-simple-jndi">Error when trying to use Simple-JNDI</a>
+     * <p>Workaround for <a href="https://stackoverflow.com/questions/51911367/error-when-trying-to-use-osjava-jndi">Error when trying to use osjava-jndi</a>
      * </p>
      */
     @Test

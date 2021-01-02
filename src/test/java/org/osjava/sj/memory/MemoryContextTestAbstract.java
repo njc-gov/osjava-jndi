@@ -4,7 +4,7 @@
  * $Rev: 1872 $ 
  * $Date: 2005-08-20 19:12:54 -0700 (Sat, 20 Aug 2005) $ 
  * $Author: hen $
- * $URL: https://osjava.googlecode.com/svn/releases/simple-jndi-0.11.4.1/src/test/resources/org/osjava/sj/memory/MemoryContextTestAbstract.java $
+ * $URL: https://osjava.googlecode.com/svn/releases/osjava-jndi-0.11.4.1/src/test/resources/org/osjava/sj/memory/MemoryContextTestAbstract.java $
  * 
  * Created on Feb 14, 2005
  *
@@ -20,7 +20,7 @@
  *   this list of conditions and the following disclaimer in the documentation 
  *   and/or other materials provided with the distribution. 
  *
- * + Neither the name of the Simple-JNDI nor the names of its contributors may
+ * + Neither the name of the osjava-jndi nor the names of its contributors may
  *   be used to endorse or promote products derived from this software without 
  *   specific prior written permission.
  *

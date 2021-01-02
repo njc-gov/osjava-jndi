@@ -27,7 +27,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 /**
- * Simple test that asserts the correctness of OSGi metadata by starting an OSGi container, deploying Simple-JNDI with minimum dependencies (Common Lang, Common
+ * Simple test that asserts the correctness of OSGi metadata by starting an OSGi container, deploying osjava-jndi with minimum dependencies (Common Lang, Common
  * IO) and performing a JNDI lookup from within the OSGi runtime.
  * 
  * @author gromanato

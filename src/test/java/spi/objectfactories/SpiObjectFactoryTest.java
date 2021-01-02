@@ -112,7 +112,7 @@ public class SpiObjectFactoryTest {
     }
 
     /**
-     * <p>To use ObjectFactory implementations, which do not check the type of object to construct but always return an object when called. See <a href="https://github.com/h-thurow/Simple-JNDI/pull/21">Add support for tomcat factory attribute #21</a>
+     * <p>To use ObjectFactory implementations, which do not check the type of object to construct but always return an object when called. See <a href="https://github.com/njc-gov/osjava-jndi/pull/21">Add support for tomcat factory attribute #21</a>
      * </p><p>
      * Different from {@link #demoFactory2()} the ObjectFactory implementations are not applied to {@link Context#OBJECT_FACTORIES}, instead they are applied to the new javaxNamingSpiObjectFactory property.
      * </p>

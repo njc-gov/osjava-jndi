@@ -13,7 +13,7 @@
  *   this list of conditions and the following disclaimer in the documentation 
  *   and/or other materials provided with the distribution.
  * 
- * + Neither the name of Simple-JNDI nor the names of its contributors 
+ * + Neither the name of osjava-jndi nor the names of its contributors 
  *   may be used to endorse or promote products derived from this software 
  *   without specific prior written permission.
  * 
@@ -44,7 +44,7 @@ import java.util.*;
 
 /**
  * @author Robert M. Zigweid
- * @since Simple-JNDI 0.11
+ * @since osjava-jndi 0.11
  */
 public class MemoryContext implements Cloneable, Context  {
 

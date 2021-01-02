@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/simple-jndi.iml" filepath="$PROJECT_DIR$/simple-jndi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/osjava-jndi.iml" filepath="$PROJECT_DIR$/osjava-jndi.iml" />
     </modules>
   </component>
 </project>

@@ -13,7 +13,7 @@
  *   this list of conditions and the following disclaimer in the documentation 
  *   and/or other materials provided with the distribution.
  * 
- * + Neither the name of Simple-JNDI nor the names of its contributors 
+ * + Neither the name of osjava-jndi nor the names of its contributors 
  *   may be used to endorse or promote products derived from this software 
  *   without specific prior written permission.
  * 
@@ -32,7 +32,7 @@
 /*
  * org.osjava.threads.ThreadNameParser
  *
- * $URL: https://osjava.googlecode.com/svn/releases/simple-jndi-0.11.4.1/src/java/org/osjava/sj/jndi/SimpleNameParser.java $
+ * $URL: https://osjava.googlecode.com/svn/releases/osjava-jndi-0.11.4.1/src/java/org/osjava/sj/jndi/SimpleNameParser.java $
  * $Id: SimpleNameParser.java 2587 2007-06-25 02:01:53Z flamefew $
  * $Rev: 2587 $
  * $Date: 2007-06-24 19:01:53 -0700 (Sun, 24 Jun 2007) $
@@ -46,7 +46,7 @@ import javax.naming.*;
 import java.util.Properties;
 
 /**
- * The NameParser for the Simple-JNDI.  
+ * The NameParser for the osjava-jndi.  
  * 
  * @author Robert M. Zigweid
  * @version $LastChangedRevision $ $LastChangedDate: 2007-06-24 19:01:53 -0700 (Sun, 24 Jun 2007) $

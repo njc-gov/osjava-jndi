@@ -33,7 +33,7 @@ public class NioBasedJndiLoader extends JndiLoader {
      * @param preserveRootFileNameAsContextName true: If fileOrDirectory is a file, the file's name is taken as context name. This rule is only applied to files which are root files. Files found while traversing directories will always result in subcontexts named as the file. The only exception are files named "default".
      */
     public void load(File fileOrDirectory, Context ctxt, boolean preserveRootFileNameAsContextName) throws NamingException, IOException {
-        // See https://github.com/h-thurow/Simple-JNDI/issues/7
+        // See https://github.com/njc-gov/osjava-jndi/issues/7
         fileOrDirectory = new File(fileOrDirectory.getAbsolutePath());
         if (fileOrDirectory.isDirectory()) {
             loadDirectory(fileOrDirectory, fileOrDirectory.getPath(), ctxt, null, "");

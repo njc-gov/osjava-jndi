@@ -3,8 +3,8 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.java-tools.utils</groupId>
-	<artifactId>simple-jndi</artifactId>
+	<groupId>gov.njc.ito.utils</groupId>
+	<artifactId>osjava-jndi</artifactId>
 	<version>0.23.0</version>
 	<name>${project.groupId}:${project.artifactId}</name>
 	<description>
@@ -13,19 +13,19 @@
         files serves as a model for the contexts structure. The contexts get populated
         with Objects defined by .properties files, XML files or Windows-style .ini files.
     </description>
-	<url>https://github.com/java-tools/jt-simple-jndi</url>
+	<url>https://github.com/java-tools/osjava-jndi</url>
 	<licenses>
 		<license>
 			<url>
-                https://raw.githubusercontent.com/java-tools/jt-simple-jndi/main/LICENSE.txt
+                https://raw.githubusercontent.com/java-tools/osjava-jndi/main/LICENSE.txt
             </url>
 		</license>
 	</licenses>
 	<scm>
-		<connection>scm:git:git//github.com/h-thurow/Simple-JNDI.git</connection>
-		<developerConnection>scm:git:ssh//github.com/h-thurow/Simple-JNDI.git
+		<connection>scm:git:git//github.com/njc-gov/osjava-jndi.git</connection>
+		<developerConnection>scm:git:ssh//github.com/njc-gov/osjava-jndi.git
         </developerConnection>
-		<url>https://github.com/java-tools/jt-simple-jndi</url>
+		<url>https://github.com/java-tools/osjava-jndi</url>
 	</scm>
 	<developers>
 		<developer>
@@ -264,7 +264,7 @@
 				<version>2.19.1</version>
 				<configuration>
 					<testFailureIgnore>false</testFailureIgnore>
-                    <!-- ensure OSGiSuite is run as the last test. See https://github.com/h-thurow/Simple-JNDI/pull/20 -->
+                    <!-- ensure OSGiSuite is run as the last test. See https://github.com/njc-gov/osjava-jndi/pull/20 -->
 					<test>GeneralTestSuite, OSGiSuite</test>
 					<runOrder>alphabetical</runOrder>
 				</configuration>
@@ -292,7 +292,7 @@
 					<autoReleaseAfterClose>true</autoReleaseAfterClose>
 				</configuration>
 			</plugin>
-			<plugin>
+			<!--plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-gpg-plugin</artifactId>
 				<version>1.6</version>
@@ -305,13 +305,21 @@
 						</goals>
 					</execution>
 				</executions>
-			</plugin>
+			</plugin-->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
 				<version>2.10.4</version>
-				<configuration>
+				<!--configuration>
 					<show>private</show>
+				</configuration-->
+				<configuration>
+					<additionalparam>-Xdoclint:all -Xdoclint:-missing</additionalparam>
+					<additionalOptions>-Xdoclint:all -Xdoclint:-missing</additionalOptions>
+					<additionalJOptions>
+						<additionalJOption>-Xdoclint:all</additionalJOption>
+						<additionalJOption>-Xdoclint:-missing</additionalJOption>
+					</additionalJOptions>
 				</configuration>
 				<executions>
 					<execution>

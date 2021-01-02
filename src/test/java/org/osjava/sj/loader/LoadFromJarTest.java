@@ -34,7 +34,7 @@ public class LoadFromJarTest {
      */
     @Test @Ignore
     public void jaredRoot() throws IOException {
-        File jarFile = new File("src/test/simple-jndi-0.17.3-tests.jar");
+        File jarFile = new File("src/test/osjava-jndi-0.17.3-tests.jar");
         JarFile jar = new JarFile(jarFile);
         Enumeration<? extends JarEntry> enumeration = jar.entries();
         while (enumeration.hasMoreElements()) {
@@ -52,7 +52,7 @@ public class LoadFromJarTest {
      */
     @Test @Ignore
     public void jaredRoot1() throws IOException {
-        File jarFile = new File("src/test/simple-jndi-0.17.3-tests.jar");
+        File jarFile = new File("src/test/osjava-jndi-0.17.3-tests.jar");
 
         Path path = Paths.get(jarFile.toURI());
         FileSystem fs = FileSystems.newFileSystem(path, null);
@@ -68,7 +68,7 @@ public class LoadFromJarTest {
      */
     @Test @Ignore
     public void jaredRoot2() throws IOException {
-        File file = new File("src/test/simple-jndi-0.17.3-tests.jar");
+        File file = new File("src/test/osjava-jndi-0.17.3-tests.jar");
         JarFile jar = new JarFile(file);
         Path path = Paths.get(file.toURI());
         try (FileSystem fs = FileSystems.newFileSystem(path, null)) {
@@ -109,7 +109,7 @@ public class LoadFromJarTest {
      */
     @Test @Ignore
     public void jaredRoot3() throws IOException {
-        File file = new File("src/test/simple-jndi-0.17.3-tests.jar");
+        File file = new File("src/test/osjava-jndi-0.17.3-tests.jar");
         Path path = Paths.get(file.toURI());
         try (FileSystem fs = FileSystems.newFileSystem(path, null)) {
             String rootDir = "/roots/untypedProperty";
@@ -167,10 +167,10 @@ postVisitDirectory: /org/
 preVisitDirectory: /META-INF/
 preVisitDirectory: /META-INF/maven/
 preVisitDirectory: /META-INF/maven/org.osjava/
-preVisitDirectory: /META-INF/maven/org.osjava/simple-jndi/
-visitFile: /META-INF/maven/org.osjava/simple-jndi/pom.properties
-visitFile: /META-INF/maven/org.osjava/simple-jndi/pom.xml
-postVisitDirectory: /META-INF/maven/org.osjava/simple-jndi/
+preVisitDirectory: /META-INF/maven/org.osjava/osjava-jndi/
+visitFile: /META-INF/maven/org.osjava/osjava-jndi/pom.properties
+visitFile: /META-INF/maven/org.osjava/osjava-jndi/pom.xml
+postVisitDirectory: /META-INF/maven/org.osjava/osjava-jndi/
 postVisitDirectory: /META-INF/maven/org.osjava/
 postVisitDirectory: /META-INF/maven/
 visitFile: /META-INF/MANIFEST.MF
@@ -267,7 +267,7 @@ postVisitDirectory: /
         env.put("jndi.syntax.separator", "/");
         env.put(JndiLoader.DELIMITER, "/");
         NioBasedJndiLoader loader = new NioBasedJndiLoader(env);
-        File file = new File("src/test/simple-jndi-0.17.3-tests.jar");
+        File file = new File("src/test/osjava-jndi-0.17.3-tests.jar");
         InitialContext initialContext = new InitialContext(env);
         loader.loadJar(file, "/roots/untypedProperty", initialContext, true);
         Context testCtx = (Context) initialContext.lookup("file1");
@@ -285,7 +285,7 @@ postVisitDirectory: /
         env.put("jndi.syntax.separator", "/");
         env.put(JndiLoader.DELIMITER, "/");
         NioBasedJndiLoader loader = new NioBasedJndiLoader(env);
-        File file = new File("src/test/simple-jndi-0.17.3-tests.jar");
+        File file = new File("src/test/osjava-jndi-0.17.3-tests.jar");
         InitialContext ic = new InitialContext(env);
         loader.loadJar(file, "/roots/system-test", ic, true);
 //        Context testCtx = (Context) ic.lookup("one");
@@ -303,7 +303,7 @@ postVisitDirectory: /
         env.put("jndi.syntax.separator", "/");
         env.put(JndiLoader.DELIMITER, "/");
         NioBasedJndiLoader loader = new NioBasedJndiLoader(env);
-        File file = new File("src/test/simple-jndi-0.17.3-tests.jar");
+        File file = new File("src/test/osjava-jndi-0.17.3-tests.jar");
         InitialContext ic = new InitialContext(env);
         loader.loadJar(file, "/roots/sameNamesInDifferentBranches", ic, true);
         String value = (String) ic.lookup("context1/persons/holger/branch");
@@ -324,7 +324,7 @@ postVisitDirectory: /
         env.put("jndi.syntax.separator", "/");
         env.put(JndiLoader.DELIMITER, "/");
         NioBasedJndiLoader loader = new NioBasedJndiLoader(env);
-        File file = new File("src/test/simple-jndi-0.17.3-tests.jar");
+        File file = new File("src/test/osjava-jndi-0.17.3-tests.jar");
         InitialContext ic = new InitialContext(env);
         loader.loadJar(file, "/roots/sameNamesInDifferentBranches/", ic, true);
         String value = (String) ic.lookup("context1/persons/holger/branch");

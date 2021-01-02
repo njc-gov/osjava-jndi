@@ -100,7 +100,7 @@ public class JNDIConfigurationTest {
     }
 
     /**
-     * Property names must not contain ".", because JNDIConfiguration replaces them with "/" when calling Simple-JNDI.
+     * Property names must not contain ".", because JNDIConfiguration replaces them with "/" when calling osjava-jndi.
      */
     @Test(expected = NoSuchElementException.class)
     public void dotDelimitedProperties() throws Exception {
@@ -113,7 +113,7 @@ public class JNDIConfigurationTest {
             env.put("org.osjava.sj.space", "java:comp/env");
             ctx = new InitialContext(env);
 
-            // Simple-JNDI 0.13.0:
+            // osjava-jndi 0.13.0:
             // Jan 08, 2017 10:30:22 AM org.apache.commons.configuration.JNDIConfiguration configurationError
 //            WARNING: Internal error
 //            javax.naming.NamingException: Invalid subcontext 'my' in context 'java:comp/env'

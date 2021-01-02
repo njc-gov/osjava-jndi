@@ -1114,7 +1114,7 @@ public class SimpleJndiNewTest {
             env.put("org.osjava.sj.space", "java:");
             ctx = new InitialContext(env);
             final String name = (String) ctx.lookup("java:/product/name");
-            assertEquals("Simple-JNDI", name);
+            assertEquals("osjava-jndi", name);
         }
         finally {
             if (ctx != null) {

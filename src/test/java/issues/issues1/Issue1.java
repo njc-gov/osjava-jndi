@@ -10,7 +10,7 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 
 /**
- * See <a href=https://github.com/h-thurow/Simple-JNDI/issues/1>ENC problem</a>.
+ * See <a href=https://github.com/njc-gov/osjava-jndi/issues/1>ENC problem</a>.
  */
 public class Issue1 {
 

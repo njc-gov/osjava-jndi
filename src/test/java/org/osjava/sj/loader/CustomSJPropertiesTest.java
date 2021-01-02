@@ -139,7 +139,7 @@ public class CustomSJPropertiesTest {
     }
 
     /**
-     * See issue#4 <a href=https://github.com/h-thurow/Simple-JNDI/issues/4>'#' as a value of a property</a>.
+     * See issue#4 <a href=https://github.com/njc-gov/osjava-jndi/issues/4>'#' as a value of a property</a>.
      * <p>
      * "Comment lines in .properties files are denoted by the number sign (#) or the exclamation mark (!) as the first non blank character, in which all remaining text on that line is ignored. The backwards slash is used to escape a character." See https://en.wikipedia.org/wiki/.properties>Wikipedia .properties.
      */

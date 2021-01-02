@@ -13,7 +13,7 @@
  *   this list of conditions and the following disclaimer in the documentation 
  *   and/or other materials provided with the distribution.
  * 
- * + Neither the name of Simple-JNDI nor the names of its contributors 
+ * + Neither the name of osjava-jndi nor the names of its contributors 
  *   may be used to endorse or promote products derived from this software 
  *   without specific prior written permission.
  * 
@@ -64,7 +64,7 @@ public class SJDataSourceConverter implements ConverterIF {
             LOGGER.error("Incomplete arguments provided: properties={} type={}", properties, type);
             throw new IllegalArgumentException("Required subelement 'password'");
         }
-        // IMPROVE Make Simple-JNDI independant from org.osjava.datasource
+        // IMPROVE Make osjava-jndi independant from org.osjava.datasource
         return new SJDataSource(driverName, url, user, password, properties);
     }
 

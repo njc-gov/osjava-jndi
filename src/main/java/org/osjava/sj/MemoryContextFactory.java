@@ -4,7 +4,7 @@
  * $Rev: 1743 $ 
  * $Date: 2005-06-24 16:56:40 -0700 (Fri, 24 Jun 2005) $ 
  * $Author: rzigweid $
- * $URL: https://osjava.googlecode.com/svn/releases/simple-jndi-0.11.4.1/src/java/org/osjava/sj/memory/MemoryContextFactory.java $
+ * $URL: https://osjava.googlecode.com/svn/releases/osjava-jndi-0.11.4.1/src/java/org/osjava/sj/memory/MemoryContextFactory.java $
  * 
  * Created on Dec 30, 2004
  *
@@ -20,7 +20,7 @@
  *   this list of conditions and the following disclaimer in the documentation 
  *   and/or other materials provided with the distribution. 
  *
- * + Neither the name of the Simple-JNDI nor the names of its contributors may
+ * + Neither the name of the osjava-jndi nor the names of its contributors may
  *   be used to endorse or promote products derived from this software without 
  *   specific prior written permission.
  *
@@ -55,7 +55,7 @@ import static org.osjava.sj.jndi.MemoryContext.IGNORE_CLOSE;
  * Initial Context Factory for {@link MemoryContext}. Note the difference to {@link SimpleJndiContextFactory}. Here an empty context is returned. No sub contexts or JNDI objects are initialized from sub directories or property files under a root directory. The org.osjava.sj.root property may even not be set.
  * 
  * @author Robert M. Zigweid, Holger Thurow
- * @since Simple-JNDI 0.11
+ * @since osjava-jndi 0.11
  */
 public class MemoryContextFactory extends ContextFactory implements InitialContextFactory {
 
